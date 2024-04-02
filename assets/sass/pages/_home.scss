@@ -1,0 +1,48 @@
+@import '../utils/extends';
+@import '../base/reset';
+@import '../utils/variables';
+
+.col-3{
+    width: 25%;
+}
+.col-9{
+    width: 75%;
+}
+.col-4{
+    width: 30%;
+}
+.genders{
+    margin: 10% 0% 10% 5%;
+    @extend .center;
+    width: 90%;
+    gap: 5%;
+    &__cards{
+        
+        position: relative;
+        &:hover{
+                span{
+                    transform: scale(1.4);
+                    border: none;
+                    outline: 160px solid rgba(255, 255, 255, 0.3);
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    overflow: hidden;
+                }
+        }
+        img{
+            width: 100%;
+        }
+        span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 15px;
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition:  0.4s ease-in-out;
+        }
+    }
+}

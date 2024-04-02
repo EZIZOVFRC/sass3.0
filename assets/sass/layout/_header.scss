@@ -1,0 +1,41 @@
+.logo{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    &__shop{
+        display: flex;
+        gap: 10%;
+        font-size: 20px;
+    }
+    &__search{
+        border: 1px solid gray;
+        padding: 15px 10px;
+        width: 45%;
+        span{
+            font-size: 22px;
+            margin-right: 10px;
+
+        }
+        i{
+            padding-right: 10px;
+            border-right: 1px solid gray;
+
+        }
+
+    }
+    input{
+        border: none;
+        height: 120%;
+        width: 33%;
+    }
+    .fa-magnifying-glass{
+        margin-left: 190px;
+    }
+    input::placeholder{
+        font-size: 20px;
+    }
+    img{
+        height: 100%;
+    }
+}

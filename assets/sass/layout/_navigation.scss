@@ -1,0 +1,46 @@
+@import '../utils/variables';
+@import '../utils/extends';
+@import '../base/reset';
+
+.col-3{
+    width: 25%;
+}
+.col-9{
+    width: 75%;
+}
+nav{
+    background-color: $main-color;
+    padding: 0px 100px;
+}
+.home{
+    display: flex;
+    font-size: 24px;
+    margin-left: 5%;
+    &__departmens{
+        display: flex;
+        gap: 10%;
+        color: rgb(255, 255, 255);
+        background-color: #454545;
+        padding:20px 30px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+    &__navs{
+        display: flex;
+        align-items: center;
+        #hm{
+            background-color: $second-color;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            padding:20px 30px;
+            transition: 0.3s;
+            &:hover{
+                background-color: $second-color;
+            }
+        }
+    }
+}
